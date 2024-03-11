@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\mazzm\AppData\Local\Temp\testng-eclipse--93615175\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 1 failed,  5 skipped,  18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="MachineModuleTesting">MachineModuleTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="DailyProductionStatus">DailyProductionStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="GeneralModuleTesting">GeneralModuleTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="PartModuleTesting">PartModuleTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="ProductionDowntime">ProductionDowntime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UserModuleTesting">UserModuleTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="CorrectUserPassTesting">CorrectUserPassTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_456, letmein)">UsernamePasswordTesting(user_456, letmein)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(pass_word, pass@word)">UsernamePasswordTesting(pass_word, pass@word)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_123@example.com, password1)">UsernamePasswordTesting(user_123@example.com, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(john-doe@example.com, password2)">UsernamePasswordTesting(john-doe@example.com, password2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_10, 123456)">UsernamePasswordTesting(user_10, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(jane.doe@example.com, admin123)">UsernamePasswordTesting(jane.doe@example.com, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(jane.doe@example.com, incorrect_pass)">UsernamePasswordTesting(jane.doe@example.com, incorrect_pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_123@example.com, wrong_password)">UsernamePasswordTesting(user_123@example.com, wrong_password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(bobJones, securepass)">UsernamePasswordTesting(bobJones, securepass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(invalid_user@example.com, invalid_password)">UsernamePasswordTesting(invalid_user@example.com, invalid_password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user.email@example.com, wonderland)">UsernamePasswordTesting(user.email@example.com, wonderland)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user-789, changeme)">UsernamePasswordTesting(user-789, changeme)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user@company.com, test123)">UsernamePasswordTesting(user@company.com, test123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_abc, password123)">UsernamePasswordTesting(user_abc, password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user123, myp@ss)">UsernamePasswordTesting(user123, myp@ss)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="UsernamePasswordTesting(user_789, welcome)">UsernamePasswordTesting(user_789, welcome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SeleniumPack.Test1code" class="method navigator-link" hash-for-method="WebsiteTitleTesting">WebsiteTitleTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">SeleniumPack.Test1code</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MachineModuleTesting">
+                  </a> <!-- MachineModuleTesting -->
+                  <span class="method-name">MachineModuleTesting</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8649df141c79d4aea2968c5ac8fe150, clickElement {id=f.09F8F26D8FA5ADA566D4CB3779628C42.d.DB8A0C1C7ACB49D50A9BE44F7C5C003A.e.485}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\mazzm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57916/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b8649df141c79d4aea2968c5ac8fe150)] -&gt; xpath: /html/body/div/div[1]/ul/li[4]/ul/li[1]/div[2]/a]
+Session ID: b8649df141c79d4aea2968c5ac8fe150
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at SeleniumPack.Test1code.MachineModuleTesting(Test1code.java:263)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">SeleniumPack.Test1code</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DailyProductionStatus">
+                  </a> <!-- DailyProductionStatus -->
+                  <span class="method-name">DailyProductionStatus</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test1code.DailyProductionStatus()[pri:7, instance:SeleniumPack.Test1code@54107f42] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GeneralModuleTesting">
+                  </a> <!-- GeneralModuleTesting -->
+                  <span class="method-name">GeneralModuleTesting</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test1code.GeneralModuleTesting()[pri:6, instance:SeleniumPack.Test1code@54107f42] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PartModuleTesting">
+                  </a> <!-- PartModuleTesting -->
+                  <span class="method-name">PartModuleTesting</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test1code.PartModuleTesting()[pri:5, instance:SeleniumPack.Test1code@54107f42] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductionDowntime">
+                  </a> <!-- ProductionDowntime -->
+                  <span class="method-name">ProductionDowntime</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test1code.ProductionDowntime()[pri:7, instance:SeleniumPack.Test1code@54107f42] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserModuleTesting">
+                  </a> <!-- UserModuleTesting -->
+                  <span class="method-name">UserModuleTesting</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test1code.UserModuleTesting()[pri:7, instance:SeleniumPack.Test1code@54107f42] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumPack.Test1code</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrectUserPassTesting">
+                  </a> <!-- CorrectUserPassTesting -->
+                  <span class="method-name">CorrectUserPassTesting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_456, letmein)">
+                  </a> <!-- UsernamePasswordTesting(user_456, letmein) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_456, letmein)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(pass_word, pass@word)">
+                  </a> <!-- UsernamePasswordTesting(pass_word, pass@word) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(pass_word, pass@word)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_123@example.com, password1)">
+                  </a> <!-- UsernamePasswordTesting(user_123@example.com, password1) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_123@example.com, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(john-doe@example.com, password2)">
+                  </a> <!-- UsernamePasswordTesting(john-doe@example.com, password2) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(john-doe@example.com, password2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_10, 123456)">
+                  </a> <!-- UsernamePasswordTesting(user_10, 123456) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_10, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(jane.doe@example.com, admin123)">
+                  </a> <!-- UsernamePasswordTesting(jane.doe@example.com, admin123) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(jane.doe@example.com, admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(jane.doe@example.com, incorrect_pass)">
+                  </a> <!-- UsernamePasswordTesting(jane.doe@example.com, incorrect_pass) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(jane.doe@example.com, incorrect_pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_123@example.com, wrong_password)">
+                  </a> <!-- UsernamePasswordTesting(user_123@example.com, wrong_password) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_123@example.com, wrong_password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(bobJones, securepass)">
+                  </a> <!-- UsernamePasswordTesting(bobJones, securepass) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(bobJones, securepass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(invalid_user@example.com, invalid_password)">
+                  </a> <!-- UsernamePasswordTesting(invalid_user@example.com, invalid_password) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(invalid_user@example.com, invalid_password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user.email@example.com, wonderland)">
+                  </a> <!-- UsernamePasswordTesting(user.email@example.com, wonderland) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user.email@example.com, wonderland)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user-789, changeme)">
+                  </a> <!-- UsernamePasswordTesting(user-789, changeme) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user-789, changeme)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user@company.com, test123)">
+                  </a> <!-- UsernamePasswordTesting(user@company.com, test123) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user@company.com, test123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_abc, password123)">
+                  </a> <!-- UsernamePasswordTesting(user_abc, password123) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_abc, password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user123, myp@ss)">
+                  </a> <!-- UsernamePasswordTesting(user123, myp@ss) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user123, myp@ss)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UsernamePasswordTesting(user_789, welcome)">
+                  </a> <!-- UsernamePasswordTesting(user_789, welcome) -->
+                  <span class="method-name">UsernamePasswordTesting</span>
+                  <span class="parameters">(user_789, welcome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebsiteTitleTesting">
+                  </a> <!-- WebsiteTitleTesting -->
+                  <span class="method-name">WebsiteTitleTesting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mazzm\AppData\Local\Temp\testng-eclipse--93615175\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SeleniumPack.Test1code&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'MachineModuleTesting')
+data.setCell(0, 2, 'SeleniumPack.Test1code')
+data.setCell(0, 3, 11093);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CorrectUserPassTesting')
+data.setCell(1, 2, 'SeleniumPack.Test1code')
+data.setCell(1, 3, 878);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UsernamePasswordTesting')
+data.setCell(2, 2, 'SeleniumPack.Test1code')
+data.setCell(2, 3, 146);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'UsernamePasswordTesting')
+data.setCell(3, 2, 'SeleniumPack.Test1code')
+data.setCell(3, 3, 133);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'UsernamePasswordTesting')
+data.setCell(4, 2, 'SeleniumPack.Test1code')
+data.setCell(4, 3, 126);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'UsernamePasswordTesting')
+data.setCell(5, 2, 'SeleniumPack.Test1code')
+data.setCell(5, 3, 125);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UsernamePasswordTesting')
+data.setCell(6, 2, 'SeleniumPack.Test1code')
+data.setCell(6, 3, 123);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'UsernamePasswordTesting')
+data.setCell(7, 2, 'SeleniumPack.Test1code')
+data.setCell(7, 3, 120);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'UsernamePasswordTesting')
+data.setCell(8, 2, 'SeleniumPack.Test1code')
+data.setCell(8, 3, 120);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'UsernamePasswordTesting')
+data.setCell(9, 2, 'SeleniumPack.Test1code')
+data.setCell(9, 3, 107);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'UsernamePasswordTesting')
+data.setCell(10, 2, 'SeleniumPack.Test1code')
+data.setCell(10, 3, 105);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'UsernamePasswordTesting')
+data.setCell(11, 2, 'SeleniumPack.Test1code')
+data.setCell(11, 3, 105);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'UsernamePasswordTesting')
+data.setCell(12, 2, 'SeleniumPack.Test1code')
+data.setCell(12, 3, 101);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'UsernamePasswordTesting')
+data.setCell(13, 2, 'SeleniumPack.Test1code')
+data.setCell(13, 3, 99);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'UsernamePasswordTesting')
+data.setCell(14, 2, 'SeleniumPack.Test1code')
+data.setCell(14, 3, 98);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'UsernamePasswordTesting')
+data.setCell(15, 2, 'SeleniumPack.Test1code')
+data.setCell(15, 3, 96);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'UsernamePasswordTesting')
+data.setCell(16, 2, 'SeleniumPack.Test1code')
+data.setCell(16, 3, 94);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'UsernamePasswordTesting')
+data.setCell(17, 2, 'SeleniumPack.Test1code')
+data.setCell(17, 3, 94);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'WebsiteTitleTesting')
+data.setCell(18, 2, 'SeleniumPack.Test1code')
+data.setCell(18, 3, 44);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'GeneralModuleTesting')
+data.setCell(19, 2, 'SeleniumPack.Test1code')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'UserModuleTesting')
+data.setCell(20, 2, 'SeleniumPack.Test1code')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'DailyProductionStatus')
+data.setCell(21, 2, 'SeleniumPack.Test1code')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ProductionDowntime')
+data.setCell(22, 2, 'SeleniumPack.Test1code')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'PartModuleTesting')
+data.setCell(23, 2, 'SeleniumPack.Test1code')
+data.setCell(23, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumPack.Test1code</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">2184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WebsiteTitleTesting</span>
+                <span class="method-start">2387 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">2436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_123@example.com, password1)</span>
+                <span class="method-start">2625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">2772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(john-doe@example.com, password2)</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">3094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user.email@example.com, wonderland)</span>
+                <span class="method-start">3286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">3410 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(jane.doe@example.com, admin123)</span>
+                <span class="method-start">3607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">3728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(invalid_user@example.com, invalid_password)</span>
+                <span class="method-start">3925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">4059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_123@example.com, wrong_password)</span>
+                <span class="method-start">4260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">4386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(jane.doe@example.com, incorrect_pass)</span>
+                <span class="method-start">4577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">4703 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user@company.com, test123)</span>
+                <span class="method-start">4904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">5012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_456, letmein)</span>
+                <span class="method-start">5198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">5298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(bobJones, securepass)</span>
+                <span class="method-start">5490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">5596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user123, myp@ss)</span>
+                <span class="method-start">5787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">5883 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user-789, changeme)</span>
+                <span class="method-start">6076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">6172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_abc, password123)</span>
+                <span class="method-start">6364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">6469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_789, welcome)</span>
+                <span class="method-start">6659 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">6757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(pass_word, pass@word)</span>
+                <span class="method-start">6948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">7049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UsernamePasswordTesting(user_10, 123456)</span>
+                <span class="method-start">7254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">7349 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrectUserPassTesting</span>
+                <span class="method-start">7538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">8416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MachineModuleTesting</span>
+                <span class="method-start">8663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GeneralModuleTesting</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DailyProductionStatus</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserModuleTesting</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductionDowntime</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">PartModuleTesting</span>
+                <span class="method-start">19772 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
